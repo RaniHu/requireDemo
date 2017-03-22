@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!--加载完require文件后，立即加载指定入口文件config-->
+    <script src="js/lib/require.js" data-main="js/config.js"></script>
+	<style>
+        	#main{
+            		text-align: center;
+        	}
+    	</style>
+</head>
+<body>
+<!--1.require.js即AMD，使模块和它的依赖可以被异步的加载
+    2.commonJs是同步加载的，js加载时浏览器会停止渲染，文件越多，页面失去响应的时间越长
+    3.主要有三个api：define加载
+-->
+<div id="main">
+    <!-- 首页-->
+    <section class="section s1 active">
+        <button id="btn1">点我计算结果</button>
+        <h1 id="app1"></h1>
+
+        <h2 id="app2">计算结果是:<span></span></h2>
+    </section>
+    <section class="section s2">
+        我是第二页
+    </section>
+    <section class="section s3">
+        我是第三页
+    </section>
+</div>
+
+</body>
+</html>
